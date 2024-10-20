@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>میاخیل الکتریک</title>
+    <title>میاخیل الکتریک | فروشگاه تجهیزات الکتریکی</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #ffffff;
-            color: #000;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
             direction: rtl;
@@ -33,6 +34,10 @@
             margin: 0 15px;
             text-decoration: none;
             font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00ced1;
         }
         section {
             padding: 20px;
@@ -43,20 +48,31 @@
             flex-wrap: wrap;
         }
         .product {
-            background-color: #f0f0f0;
+            background-color: #fff;
             border: 1px solid #ddd;
+            border-radius: 5px;
             padding: 15px;
             margin: 10px;
             width: 250px;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
         }
         .product img {
             width: 100%;
             height: 200px;
             object-fit: cover;
+            border-radius: 5px;
         }
         .product h2 {
             color: #00ced1;
+            margin: 10px 0;
+        }
+        .product p {
+            margin: 5px 0;
         }
         footer {
             background-color: #000;
@@ -64,13 +80,19 @@
             padding: 20px;
             text-align: center;
         }
+        footer p {
+            margin: 0;
+        }
+        .contact-info, .location {
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>میاخیل الکتریک</h1>
-        <p>فروشگاه تجهیزات الکتریکی</p>
+        <p>فروشگاه تجهیزات الکتریکی با بهترین کیفیت</p>
     </header>
 
     <nav>
@@ -103,17 +125,17 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact-info">
         <h2>تماس با ما</h2>
         <p>شماره‌های تماس:</p>
         <ul>
-            <li>02021054992</li>
-            <li>0707492955</li>
-            <li>0780867379</li>
+            <li>📞 02021054992</li>
+            <li>📞 0707492955</li>
+            <li>📞 0780867379</li>
         </ul>
     </section>
 
-    <section id="location">
+    <section id="location" class="location">
         <h2>آدرس</h2>
         <p>نادر پشتون، سروری مارکیت منزل اول، دوکان نمبر 37</p>
     </section>
@@ -123,4 +145,4 @@
     </footer>
 
 </body>
-        </html>
+    </html>
